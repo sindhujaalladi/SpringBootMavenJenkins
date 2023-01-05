@@ -17,9 +17,10 @@ public class SpringBootMavenJenkinsApplication {
 	@GetMapping("printmessgae")
 	public String getMessage() {
 		logger.info("getmessage method started");
+		logger.info("hello");
 		return "hi welcome to jenkins world";
 	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootMavenJenkinsApplication.class, args);
 	}
